@@ -16,3 +16,7 @@ Once start.bat is run, check.bat will begin to execute (invisibly). If/when it d
 
 ********
 Because check.bat runs invisibly, the only way to kill it is through Task Manager or by deleting check.bat. I suggest keeping a backup of check.bat in case the former method fails and you have to use the latter.
+
+
+My Button
+![](http://i.imgur.com/EABVpXK.gif)
