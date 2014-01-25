@@ -1,12 +1,12 @@
 bullybutton
 ===========
 
-A school project. A simple python script to create a button that opens an email submission form when you click it. Other scripts to ensure the button runs continuously and a script to run files invisibly.
+A school project. A simple python script to create a button that opens an email submission form when you click it. Other scripts to ensure the button runs continuously and a VBScript to run files invisibly.
 
 ********
 Installation
 
-Place all files (scripts and image (must be saved as button.gif)) in C:\bullybutton. If you wish to place the files elsewhere, you will have to modify the code. In the batch files and bullybutton.py, other files to be opened are referenced as .exe's. I compiled them from python scripts to remove the dependency on havinng Python installed. You can either take this path or simply change the code to have the correct directories and .py suffixes.
+Place all files (scripts and image (must be saved as button.gif)) in C:\bullybutton. If you wish to place the files elsewhere, you will have to modify the code. In the batch files and bullybutton.py, other files to be opened are referenced as .exe's. I compiled them from python scripts to remove the dependency on having Python installed. You can either take this path or simply change the code to have the correct directories and .py suffixes.
 
 ********
 Information About Files
