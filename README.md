@@ -2,10 +2,12 @@ bullybutton
 ===========
 
 A school project. A simple python script to create a button that opens a website when you click it. Other scripts to ensure the button runs continuously and a script to run files invisibly.
+===========
 
 Installation
 
 Place all files (scripts and image (must be saved as button.gif)) in C:\bullybutton. If you wish to place the files elsewhere, you will have to modify the code. If you desire, change the image and the website URL and use this as a quick link to any site you want.
+===========
 
 Information About Files
 * invisible.vbs: A VBScript that starts a file invisibly, from the command line. 
@@ -21,7 +23,7 @@ Once start.bat is run, check.bat will begin to execute (invisibly). If/when it d
 ********
 Because check.bat runs invisibly, the only way to kill it is through Task Manager or by deleting check.bat. I suggest keeping a backup of check.bat in case the former method fails and you have to use the latter.
 
-
+********
 My Button
 
 ![](http://i.imgur.com/EABVpXK.gif)
