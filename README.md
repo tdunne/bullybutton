@@ -6,7 +6,7 @@ A school project. A simple python script to create a button that opens a website
 ********
 Installation
 
-Place all files (scripts and image (must be saved as button.gif)) in C:\bullybutton. If you wish to place the files elsewhere, you will have to modify the code. If you desire, change the image and the website URL and use this as a quick link to any site you want.
+Place all files (scripts and image (must be saved as button.gif)) in C:\bullybutton. If you wish to place the files elsewhere, you will have to modify the code. 
 
 ********
 Information About Files
