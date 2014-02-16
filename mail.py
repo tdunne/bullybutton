@@ -1,31 +1,54 @@
 import smtplib
+import random
+# Create a random number to be used as an ID number for each message
+id = random.getrandbits(30)
+id = str(id)
 
 # Specifying the from and to addresses
-
-fromaddr = 'gmailaddress@gmail.com'
-toaddrs  = ['recipient1', 'recipient2'] # Can add more recipients in this form
-
+fromaddr = 'fromaddress@gmail.com'
+toaddrs1  = 'studentmoderators@gmail.com' # To add more emails, se the format ["email1@gmail.com', "email2@gmail.com"] etc
+toaddrs2 = 'teachers@gmail.com'
 # Create message
 print("This will send an email to the moderators of the bullying program.")
 name = raw_input("Enter full name: ")
+while not name:
+    name = raw_input("Please enter full name: ")
 year = raw_input("Enter your year: ")
+while not year:
+    year = raw_input("Please enter your year: ")
 year = str(year)
 msg = raw_input("Enter your message here in one line, hit enter when finished: ")
-msg += " - "
-msg += name # Append name and year
-msg += ", Year "
-msg += year
-
+message = "#" + id + ": " + msg
+msg1 = msg
+msg1 += " - "
+msg1 += name # Append name and year
+msg1 += ", Year "
+msg1 += year
+message1 = "#" + id + ": " + msg1
 
 # Gmail Login
 
-username = 'gmailusername@gmail.com'
-password = 'gmailpassword'
+username = 'account@gmail.com'
+password = 'password'
 
-# Sending the mail  
+# Sending the mail
+try: # attempt to send emails
+    # msg 1, no name or year - confidential
+    server = smtplib.SMTP('smtp.gmail.com:587')
+    server.starttls()
+    server.login(username,password)
+    server.sendmail(fromaddr, toaddrs1, message)
+    server.quit()
+    
+    # msg 2, name and year - sent to teachers
+    server = smtplib.SMTP('smtp.gmail.com:587')
+    server.starttls()
+    server.login(username,password)
+    server.sendmail(fromaddr, toaddrs2, message1)
+    server.quit()
 
-server = smtplib.SMTP('smtp.gmail.com:587')
-server.starttls()
-server.login(username,password)
-server.sendmail(fromaddr, toaddrs, msg)
-server.quit()
+    print("Message sent successfully. Your report will be reviewed as soon as possible.\nIf you require more immediate assistance:")
+    print("Kids Help Line - www.kidshelp.com.au or call 1800 55 1800 (free call)\nbeyond blue - www.beyondblue.org.au\nLifeLine - www.lifeline.org.au or call 13 11 14")
+except: # Message sending failed for some reason.
+    print("Message sending failed. Please check your internet connection and try again.")
+    print("Alternatively, if you require more immediate assistance:\nKids Help Line - www.kidshelp.com.au or call 1800 55 1800 (free call)\nbeyond blue - www.beyondblue.org.au\nLifeLine - www.lifeline.org.au or call 13 11 14")
