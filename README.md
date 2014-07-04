@@ -1,5 +1,3 @@
-bullybutton
-===========
    Copyright 2014 Tim Dunne
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +12,8 @@ bullybutton
    See the License for the specific language governing permissions and
    limitations under the License.
 ********
+bullybutton
+===========
 A school project. A simple python script to create a button that opens an email submission form when you click it. Other scripts to ensure the button runs continuously and a VBScript to run files invisibly.
 
 ********
