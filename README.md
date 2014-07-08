@@ -37,6 +37,15 @@ Once start.bat is run, check.bat will begin to execute (invisibly). If/when it d
 Because check.bat runs invisibly, the only way to kill it is through Task Manager or by deleting check.bat. I suggest keeping a backup of check.bat in case the former method fails and you have to use the latter.
 
 ********
+Dependencies
+
+All the files needed to run the button on Windows are included in the package. The only instance in which other programs are needed is if you wish to edit the source code. Programs needed to edit the source code:
+* Python 2.7 – the language the button is written in
+* Py2exe – the library used to compile the python scripts, www.py2exe.org
+* Notepad – to open/edit the batch files and the VBScript
+
+
+*******
 My Button
 
 ![](http://i.imgur.com/EABVpXK.gif)
